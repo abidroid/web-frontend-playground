@@ -39,6 +39,7 @@
             font-weight: bold;
         }
     </style>
+    
 </head>
 
 <body>
@@ -49,8 +50,13 @@
     <h5 title="heading 5">Heading Five</h5>
     <h6 title="heading 6">Heading Six</h6>
     <hr />
-    <br/>
-    <span>New Offer</span>
+    <br />
+    <span id="offerSpan">New Offer</span>
+    <script>
+        document.getElementById('offerSpan').addEventListener('click', function () {
+            alert('You clicked the New Offer!');
+        });
+    </script>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, animi ex! Provident natus officia quisquam, magni
         voluptate illo! Facilis, aliquam.</p>
 
