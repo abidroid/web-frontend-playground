@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /* BASE STYLES */
+        :root {
+            --clr-dark: #0f172a;
+            --clr-light: #f1f5f9;
+            --clr-accent: #e11d48;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            word-spacing: 1.4px;
+            font-family: "Roboto", sans-serif;
+            color: var(--clr-dark);
+            background-color: var(--clr-light);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            height: 700px;
+            margin: 0 auto;
+            border: 2px solid var(--clr-dark);
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: #fb7185;
+            padding: 1em;
+            font-weight: 700;
+            color: var(--clr-light);
+            text-align: center;
+            border: 10px solid var(--clr-accent);
+            border-radius: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row; /* main axis */
+            justify-content: space-evenly; /* main axis alignment */
+            align-items: center; /* cross axis alignment */
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Learnnig from <a href="https://www.youtube.com/watch?v=phWxA89Dy94">Youtube</a></h1>
+    <div class="container">
+        <div class="item item-1">Item 1</div>
+        <div class="item item-2">Item 2</div>
+        <div class="item item-3">Item 3</div>
+    </div>
+</body>
+
+</html>
