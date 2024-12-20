@@ -7,7 +7,7 @@
     <title>Forms</title>
 
     <style>
-        .form{
+        .form {
             background-color: #ccc;
             padding: 20px;
         }
@@ -26,32 +26,32 @@
             <label for="lastname">Last Name</label>
             <input type="text" name="" id="lastname">
             <br><br>
-    
+
             <label for="mobile">Mobile</label>
             <input type="tel" name="" id="mobile">
             <br><br>
-            
+
             <label for="">Gender:</label>
             <br>
             <input type="radio" name="gender" id="male">
             <label for="male">Male
             </label>
-    
+
             <input type="radio" name="gender" id="female">
             <label for="female">Female
             </label>
             <br><br>
-    
+
             <label for="country">Country</label>
             <select name="" id="country">
-                <option value="" >--Select an Option--</option>
-                <option value="" >Pakistan</option>
-                <option value="" >India</option>
-                <option value="" >China</option>
-                <option value="" >Japan</option>
+                <option value="">--Select an Option--</option>
+                <option value="">Pakistan</option>
+                <option value="">India</option>
+                <option value="">China</option>
+                <option value="">Japan</option>
             </select>
             <br><br>
-    
+
             <fieldset>
                 <legend>Hobbies</legend>
                 <input type="checkbox" name="cricket" id="cricket">
@@ -69,7 +69,7 @@
             <label for="message">Message</label>
             <br>
             <textarea name="" id="message" rows="8" cols="30"></textarea>
-    
+
         </form>
     </div>
 
@@ -77,17 +77,17 @@
 
     <div class="form">
         <h2>Form 2</h2>
-        <form >
+        <form>
             <h1>Travel reservation form</h1>
             <h2>* denotes mandatory</h2>
 
             <label for="fullname">Full name*:</label><br>
             <input type="text" id="fullname" placeholder="FirstName LastName" required>
-           
+
             <br><br>
             <label for="email">Email address*:</label><br>
             <input type="email" id="email" placeholder="EAMIL_ADDRESS" required>
-        
+
             <br><br>
             <label for="city">Select Tour Package*:</label><br>
             <select name="" id="city" required>
@@ -98,11 +98,11 @@
             <br><br>
             <label for="arrival">Arrival date*:</label><br>
             <input type="date" name="" id="arrival" placeholder="m/d/y" required>
-        
+
             <br><br>
             <label for="persons">Number of persons*:</label><br>
             <input type="text" id="persons" placeholder="UNKNOWN_TYPE" required>
-        
+
             <br><br>
             <label for="facility">What would you like to avail?*</label><br>
             <input type="checkbox" name="" id="boarding">
@@ -117,8 +117,8 @@
 
             <br>
             <label for="coupon">Discount Coupon code:</label><br>
-            <input type="text" id="coupon" placeholder="UNKNOWN_TYPE" >
-        
+            <input type="text" id="coupon" placeholder="UNKNOWN_TYPE">
+
             <br><br>
             <label for="conditoins">Terms and Conditions</label><br>
             <input type="radio" name="conditions" id="agree">
@@ -128,6 +128,51 @@
 
             <br><br>
             <input type="submit" value="Complete reservation">
+        </form>
+    </div>
+
+    <hr>
+    <div class="form">
+        <h2>Form 3</h2>
+        <form>
+            <fieldset>
+                <legend>Your Details:</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name"> <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Your Review:</legend>
+
+                <label for="hear">How did you hear about us? </label>
+                <select name="" id="hear">
+                    <option value="google">google</option>
+                    <option value="facebook">facebook</option>
+                    <option value="x">x</option>
+                </select>
+
+
+                <br><br>
+                <label for="asking">Woudld you visite again?</label><br>
+                <input type="radio" name="asking" id="yes"><label for="yes">Yes</label>
+                <input type="radio" name="asking" id="no"><label for="no">No</label>
+                <input type="radio" name="asking" id="maybe"><label for="maybe">May be</label>
+
+
+                <br><br>
+                <label for="comments">Coments:</label><br>
+                <textarea name="" id="comments" cols="30" rows="7"></textarea>
+
+                <br><br>
+                <input type="checkbox" name="" id="signup"><label for="signup">Sign me up for email updates</label>
+
+                <br><br>
+                <input type="submit" value="Submit review">
+            </fieldset>
         </form>
     </div>
 </body>
