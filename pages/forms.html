@@ -5,63 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+
+    <style>
+        .form{
+            background-color: #ccc;
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
     <h1>User Information</h1>
 
-    <form action="">
-        <label for="firstname">First Name</label>
-        <input type="text" id="firstname">
-        <br><br>
-        <label for="lastname">Last Name</label>
-        <input type="text" name="" id="lastname">
-        <br><br>
-
-        <label for="mobile">Mobile</label>
-        <input type="tel" name="" id="mobile">
-        <br><br>
-        
-        <label for="">Gender:</label>
-        <br>
-        <input type="radio" name="gender" id="male">
-        <label for="male">Male
-        </label>
-
-        <input type="radio" name="gender" id="female">
-        <label for="female">Female
-        </label>
-        <br><br>
-
-        <label for="country">Country</label>
-        <select name="" id="country">
-            <option value="" >--Select an Option--</option>
-            <option value="" >Pakistan</option>
-            <option value="" >India</option>
-            <option value="" >China</option>
-            <option value="" >Japan</option>
-        </select>
-        <br><br>
-
-        <fieldset>
-            <legend>Hobbies</legend>
-            <input type="checkbox" name="cricket" id="cricket">
-            <label for="cricket">Cricket</label><br>
-            <input type="checkbox" name="football" id="football">
-            <label for="football">Football</label><br>
-            <input type="checkbox" name="hockey" id="hockey">
-            <label for="hockey">Hockey</label><br>
-            <input type="checkbox" name="web" id="web">
-            <label for="web">Web Dev</label><br>
-            <input type="checkbox" name="mobile" id="mobile">
+    <div class="form">
+        <h2>Form 1</h2>
+        <form action="">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname">
+            <br><br>
+            <label for="lastname">Last Name</label>
+            <input type="text" name="" id="lastname">
+            <br><br>
+    
             <label for="mobile">Mobile</label>
-        </fieldset>
-        <br><br>
-        <label for="message">Message</label>
-        <br>
-        <textarea name="" id="message" rows="8" cols="30"></textarea>
+            <input type="tel" name="" id="mobile">
+            <br><br>
+            
+            <label for="">Gender:</label>
+            <br>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male
+            </label>
+    
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female
+            </label>
+            <br><br>
+    
+            <label for="country">Country</label>
+            <select name="" id="country">
+                <option value="" >--Select an Option--</option>
+                <option value="" >Pakistan</option>
+                <option value="" >India</option>
+                <option value="" >China</option>
+                <option value="" >Japan</option>
+            </select>
+            <br><br>
+    
+            <fieldset>
+                <legend>Hobbies</legend>
+                <input type="checkbox" name="cricket" id="cricket">
+                <label for="cricket">Cricket</label><br>
+                <input type="checkbox" name="football" id="football">
+                <label for="football">Football</label><br>
+                <input type="checkbox" name="hockey" id="hockey">
+                <label for="hockey">Hockey</label><br>
+                <input type="checkbox" name="web" id="web">
+                <label for="web">Web Dev</label><br>
+                <input type="checkbox" name="mobile" id="mobile">
+                <label for="mobile">Mobile</label>
+            </fieldset>
+            <br><br>
+            <label for="message">Message</label>
+            <br>
+            <textarea name="" id="message" rows="8" cols="30"></textarea>
+    
+        </form>
+    </div>
 
-    </form>
+    <hr>
+
+    <div class="form">
+        <h2>Form 2</h2>
+        <form >
+
+        </form>
+    </div>
 </body>
 
 </html>
