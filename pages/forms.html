@@ -78,7 +78,56 @@
     <div class="form">
         <h2>Form 2</h2>
         <form >
+            <h1>Travel reservation form</h1>
+            <h2>* denotes mandatory</h2>
 
+            <label for="fullname">Full name*:</label><br>
+            <input type="text" id="fullname" placeholder="FirstName LastName" required>
+           
+            <br><br>
+            <label for="email">Email address*:</label><br>
+            <input type="email" id="email" placeholder="EAMIL_ADDRESS" required>
+        
+            <br><br>
+            <label for="city">Select Tour Package*:</label><br>
+            <select name="" id="city" required>
+                <option value="goa">goa</option>
+                <option value="mumbai">mumbai</option>
+                <option value="delhi">delhi</option>
+            </select>
+            <br><br>
+            <label for="arrival">Arrival date*:</label><br>
+            <input type="date" name="" id="arrival" placeholder="m/d/y" required>
+        
+            <br><br>
+            <label for="persons">Number of persons*:</label><br>
+            <input type="text" id="persons" placeholder="UNKNOWN_TYPE" required>
+        
+            <br><br>
+            <label for="facility">What would you like to avail?*</label><br>
+            <input type="checkbox" name="" id="boarding">
+            <label for="boarding">Boarding</label>
+            <br>
+            <input type="checkbox" name="" id="fooding">
+            <label for="fooding">Fooding</label>
+            <br>
+            <input type="checkbox" name="" id="sight">
+            <label for="sight">Sight Seeing</label>
+            <br>
+
+            <br>
+            <label for="coupon">Discount Coupon code:</label><br>
+            <input type="text" id="coupon" placeholder="UNKNOWN_TYPE" >
+        
+            <br><br>
+            <label for="conditoins">Terms and Conditions</label><br>
+            <input type="radio" name="conditions" id="agree">
+            <label for="agree">I agree</label>
+            <input type="radio" name="conditions" id="disagree">
+            <label for="disagree">I disagree</label>
+
+            <br><br>
+            <input type="submit" value="Complete reservation">
         </form>
     </div>
 </body>
