@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+    .relative-box {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        position: relative;       /* Enable relative positioning */
+        top: 20px;                /* Shift the box 20px down from its original position */
+        left: 30px;               /* Shift the box 30px to the right from its original position */
+        border: 2px solid blue;
+      }
+      /* An extra box for comparison */
+      .static-box {
+        width: 200px;
+        height: 100px;
+        background-color: lightgreen;
+        border: 2px solid green;
+        margin-top: 10px;
+      }
+
+      .main-button {
+        width: 160px;
+        height: 50px;
+        background-color: transparent;
+        margin-top: 50px;
+        text-align: center;
+        
+      }
+
+      .actual-button {
+        width: 160px;
+        height: 50px;
+        background-color: rebeccapurple ;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+      }
+
+      .batch {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-color: #f00;
+        left: 140px;
+        top: 20px;
+        border-radius: 50%;
+      }
+    </style>
+</head>
+<body>
+    <h1>CSS Positions</h1>
+    <div class="relative-box">
+        I am positioned relatively!
+      </div>
+      
+      <div class="static-box">
+        I am a static (default) positioned box.
+      </div>
+
+      <div class="main-button">
+        <div class="batch"></div>
+        <div class="actual-button">Notifications</div>
+      </div>
+</body>
+
+
+</html>
