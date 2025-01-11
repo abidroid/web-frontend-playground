@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            background-color: #b3f0bc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 250px;
+            height: 500px;
+            background-color: #fff;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image-container img {
+            height: 250px;
+            width: 250px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .details {
+            padding: 16px;
+            gap: 16px;
+            display: flex;
+            flex-direction: column;
+            /* background-color: #8d2323; */
+
+        }
+
+        .details p {
+            font-size: 12px;
+        }
+
+        .row-with-select {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row-with-select select {
+            width: 50%;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .last-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .icon-btn {
+            display: flex;
+            /* Allow items to be placed side by side */
+            align-items: center;
+            justify-content: center;
+            /* Vertically center icon & text */
+            gap: 0.5rem;
+            /* Space between the icon and text */
+
+            padding: 0.5rem 1rem;
+            border: none;
+            /* background-color: #4CAF50; */
+            background: linear-gradient(to right, #0f0, rgb(181, 236, 181));
+            /* Example background */
+            /* color: white; */
+            cursor: pointer;
+            border-radius: 0.5rem;
+            width: 70%;
+        }
+
+        .icon-btn img {
+            width: 20px;
+            /* Adjust icon size */
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="card">
+            <div class="image-container">
+                <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL3Jhd3BpeGVsb2ZmaWNlNl9taW5pbWFsX2hlYWRwaG9uZV9pbl90aGVfc3R5bGVfb2ZfYWVzdGhldGljX25lb185ZWJhYmU3Yi0wNmM5LTQzMTItODI3Yy02M2FlYTMzMDFmOTFfMS5wbmc.png"
+                    alt="headphone">
+            </div>
+            <div class="details">
+                <h2 class="heading2">AirPods Max</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, dolorum!</p>
+
+                <div class="row-with-select">
+
+                    <select>
+                        <option value="Red">Red</option>
+                        <option value="Green">Green</option>
+                        <option value="Blue">Blue</option>
+                    </select>
+                    <select>
+                        <option value="Mac">Mac</option>
+                        <option value="Android">Android</option>
+                        <option value="iPhone">iPhone</option>
+                    </select>
+                </div>
+
+                <hr>
+
+                <div class="last-row">
+                    <h3>$549</h3>
+                    <button class="icon-btn">
+                        <img src="path-to-your-icon.svg" alt="Icon" />
+                        <span>Click Me</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
