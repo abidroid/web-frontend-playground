@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design 2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            background-color: #ccc;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .card {
+            width: 500px;
+            height: 300px;
+            background-color: #EBE6D8;
+        }
+
+        .card1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card1 .cross-container {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            padding-left: 70px;
+        }
+
+        .card1 .portfolio {
+            font-size: 50px;
+            font-weight: bolder;
+        }
+
+        .card1 .year {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+        }
+
+        .card1 .year hr {
+            width: 220px;
+            height: 4px;
+
+        }
+
+        .card2 {
+            display: flex;
+            flex: row;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 5px 5px 5px #888; 
+
+        }
+
+        .card2 .container-with-image {
+
+            height: 250px;
+            width: 180px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px #888; 
+
+
+        }
+
+        .card2 .container-with-image img {
+
+            width: 180px;
+            height: 200px;
+            background-color: #fff;
+            object-fit: cover;
+            margin-top: 10px;
+
+        }
+
+        .card2 .details {
+
+            height: 250px;
+            width: 250px;
+            /* background-color: #fff; */
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+
+        .card2 .top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-top: 5px;
+        }
+
+        .top-row-left {
+            display: flex;
+            gap: 2px;
+
+        }
+
+        .top-row-left .circle {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #CCC;
+        }
+
+        .top-row-left .red-circle {
+            background-color: #f00;
+        }
+
+        .top-row-left .yellow-circle {
+            background-color: yellow;
+        }
+
+        .top-row-left .green-circle {
+            background-color: rgb(13, 201, 13);
+        }
+
+        .card2 .details .top-row {
+
+            display: flex;
+            align-items: center;
+        }
+        .card2 .details .cross-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .card2 .details .about-me {
+            font-size: 24px;
+            font-weight: bolder;
+        }
+
+        .card2 .details .bottom-row {
+            width: 250px;
+            /* height: 50px; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card2 .details .bottom-row .contact-container{
+            
+            display: flex;
+            gap: 5px;
+            font-size: 14px;
+            align-items: center;
+        }
+
+        .card2 .details .bottom-row .email-container{
+            
+            display: flex;
+            gap: 5px;
+            font-size: 14px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="card card1">
+            <div class="cross-container">
+                <span>x x x x x x</span>
+                <span> x x x x x x</span>
+            </div>
+            <div class="portfolio">PORTFOLIO</div>
+            <div class="year">
+                <span>2022</span>
+                <hr />
+                <span>2023</span>
+            </div>
+        </div>
+
+        <div class="card card2">
+            <div class="container-with-image">
+                <div class="top-row">
+                    <div class="top-row-left">
+                        <div class="circle red-circle"></div>
+                        <div class="circle yellow-circle"></div>
+                        <div class="circle green-circle"></div>
+                    </div>
+
+                    <span>about me</span>
+                </div>
+
+                <img src="https://avatars.githubusercontent.com/u/17814795?v=4" alt="">
+            </div>
+
+            <div class="details">
+
+                <div class="top-row">
+                    <div class="about-me">ABOUT ME<br />ABID</div>
+                    <div class="cross-container">
+                        <span>x x x x x x</span>
+                        <span> x x x x x x</span>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis unde dolor dignissimos, aspernatur debitis numquam et nesciunt ipsam est amet?</p>
+            
+                <h4>Contact me</h4>
+                <hr>
+
+                <div class="bottom-row">
+                    <div class="contact-container">
+
+                        <div class="phone-icon">
+                            icon
+                        </div>
+                    
+                        <div class="phone-num">03329964494</div>
+                    </div>
+                
+                    <div class="email-container">
+                        <div class="phone-icon">icon</div>
+                    
+                        <div class="phone-num">abidroid</div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
