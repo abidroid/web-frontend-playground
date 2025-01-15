@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX Card Design</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            background-color: purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 600px;
+            height: 200px;
+            background: #fff;
+            display: flex;
+            gap: 10px;
+
+        }
+
+        .left-container {
+            width: 250px;
+            height: 200px;
+            /* position: relative; */
+        }
+
+        .img-container {
+            width: 250px;
+            height: 200px;
+            position: relative;
+        }
+
+        .featured, .car-image {
+            position: absolute;
+            
+        }
+
+        .featured {
+            background-color: rgb(221, 206, 40);
+            padding: 5px 10px;
+            margin-left: 5px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .img-container img{
+            width: 250px;
+            height: 200px;
+        }
+
+        .details {
+            background: #fff;
+            /* width: 300px; */
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="card">
+            <div class="left_container">
+                <div class="img-container">
+                    <img src="https://images.olx.com.pk/thumbnails/513743029-800x600.webp" alt="car" class="car-image">
+                    <div class="featured">Featured</div>
+
+                </div>
+            </div>
+            <div class="details">
+                <h2>Rs 960,000</h2>
+                <p>Suzuki Liana 2006 Better Then Alto/Mehran/...</p>
+                <div class="car-details">
+                    2006 14000km Petrol
+                </div>
+
+                <div class="address">North Nazimabad, Karachi * 1 day ago</div>
+            
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
