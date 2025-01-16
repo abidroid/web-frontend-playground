@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Try</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            gap: 2rem; /* i am still confuse where to use vh vw and rem */
+            background-color: #fbfafa;
+        }
+
+        .our-team {
+            width: 60vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        .our-team .heading {
+            color: #3a3d3a;
+            font-size: 2rem;
+        }
+        .our-team .green-line {
+            width: 10vw;
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, #0d890f, #75f336);
+        }
+
+        .our-team .desc {
+            color: grey;
+            text-align: center;
+            font-size: .8rem;
+        }
+
+        .team-members {
+            width: 80vw;
+            height: 50vh;
+            background-color: #7e3a3a;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .parent-card {
+            width: 300px;
+            height: 300px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            
+        }
+
+        .back-card {
+            width: 250px;
+            height: 250px;
+            background-color: #00f;
+            rotate: 110deg;
+            position: absolute;
+        }
+
+        .front-card1 {
+            width: 250px;
+            height: 250px;
+            background-color: rgb(17, 255, 0);
+            position:absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="our-team">
+            <h2 class="heading">Our Team</h2>
+            <hr class="green-line" />
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum doloremque totam eaque ullam
+                voluptate tempora, quae eum ut veniam minus</p>
+        </div>
+        <div class="team-members">
+
+            <div class="parent-card card1">
+
+                <div class="back-card back-card1">
+
+                </div>
+
+                <div class="front-card1"></div>
+
+                <div class="avatar1"></div>
+            </div>
+            <div class="parent-card card2"></div>
+            <div class="parent-card card3"></div>
+        </div>
+    </div>
+</body>
+
+</html>
