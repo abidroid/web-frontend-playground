@@ -22,7 +22,7 @@
             height: 100vh;
             gap: 2rem;
             /* i am still confuse where to use vh vw and rem */
-            background-color: #fbfafa;
+            background-color: #decfcf;
         }
 
         .our-team {
@@ -52,12 +52,13 @@
         }
 
         .team-members {
-            width: 80vw;
+            width: 1200px;
             height: 50vh;
             /* background-color: #7e3a3a; */
             display: flex;
             gap: 2rem;
             align-items: center;
+            gap: 80px;
             justify-content: center;
 
         }
@@ -94,7 +95,7 @@
             align-items: center;
             gap: 20px;
             /* box-shadow: 2px 2px #ccc; */
-            border:  1px solid #e8e5e5;
+            border: 1px solid #e8e5e5;
         }
 
         .avatar {
@@ -114,7 +115,7 @@
             top: -15px;
             border-radius: 50%;
             /* margin: 0 auto; */
-            border:  1px solid #e8e5e5;
+            border: 1px solid #e8e5e5;
 
         }
 
@@ -133,7 +134,7 @@
         .front-card .desc {
             color: grey;
             text-align: center;
-            font-size: .8rem;   
+            font-size: .8rem;
             line-height: 1.5rem;
             padding: 0 15px;
         }
@@ -147,6 +148,7 @@
             position: absolute;
             border-radius: 20px;
         }
+
         .back-card3 {
             width: 250px;
             height: 250px;
@@ -171,8 +173,44 @@
             background-color: #fff;
             top: -15px;
             border-radius: 50%;
-            border:  1px solid #e8e5e5;
+            border: 1px solid #e8e5e5;
 
+
+        }
+
+        @media (max-width: 768px) {
+
+            .main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                /* width: 100vw;
+                height: 100vh; */
+                gap: 2rem;
+                /* i am still confuse where to use vh vw and rem */
+                background-color: #decfcf;
+
+                height: auto;
+                max-height: none;
+            }
+
+            .team-members {
+                /* width: 1200px;
+                height: 50vh; */
+                /* background-color: #7e3a3a; */
+                display: flex;
+                flex-direction: column;
+                /* gap: 2rem; */
+                align-items: center;
+                gap: 80px;
+                justify-content: center;
+                height: auto;
+                max-height: none;
+                margin-top: 50px;
+
+
+            }
 
         }
     </style>
@@ -201,7 +239,8 @@
                         <span>Mobile App Dev</span>
                     </div>
 
-                    <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, saepe repudiandae.</p>
+                    <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, saepe repudiandae.
+                    </p>
                 </div>
 
                 <div class="avatar">
@@ -213,25 +252,27 @@
                 <div class="parent-card card1">
 
                     <div class="back-card back-card2">
-    
+
                     </div>
-    
+
                     <div class="front-card">
-    
+
                         <div class="name-position">
                             <span class="name">Sophia Bach</span>
                             <span>position</span>
                         </div>
-    
-                        <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, saepe repudiandae.</p>
+
+                        <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, saepe
+                            repudiandae.</p>
                     </div>
-    
+
                     <div class="avatar">
                         <img src="https://i.pinimg.com/474x/be/38/78/be3878c34f93d1663a6e5f6af4b78e9c.jpg">
                     </div>
 
                     <div class="bottom-avatar">
-                        <img src="https://img.freepik.com/premium-vector/realistic-yellow-vector-star-3d_868719-848.jpg">
+                        <img
+                            src="https://img.freepik.com/premium-vector/realistic-yellow-vector-star-3d_868719-848.jpg">
                     </div>
                 </div>
             </div>
@@ -240,19 +281,20 @@
                 <div class="parent-card card1">
 
                     <div class="back-card back-card3">
-    
+
                     </div>
-    
+
                     <div class="front-card">
-    
+
                         <div class="name-position">
                             <span class="name">Arielle Copper</span>
                             <span>position</span>
                         </div>
-    
-                        <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, saepe repudiandae.</p>
+
+                        <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, saepe
+                            repudiandae.</p>
                     </div>
-    
+
                     <div class="avatar">
                         <img src="https://i.pinimg.com/474x/82/f8/3c/82f83c07282e788a9f5c939da5d35938.jpg">
                     </div>
