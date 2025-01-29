@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bento Box</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 
     <style>
         *{
@@ -111,6 +112,33 @@
             padding: 20px;
             gap: 20px;
         }
+        #box2 .heading {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        #box3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            gap: 12px;
+            padding-right: 20px;
+        }
+
+        #box3 .top .bottom {
+            font-size: 12px;
+        }
+
+        #box3 .middle {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        #box3 .bottom {
+            color: green;
+        }
     </style>
 </head>
 <body>
@@ -126,19 +154,23 @@
             
            </div>
            <div class="bottom">
-                <h3>2.5K</h3>
+                <h2>2.5K</h2>
                 <p>283 Contributions in the last year</p>
            </div>
         </div>
         <div class="box" id="box2">
             <div class="heading">
-                <h2 class="projects">4.875     </h2>
+                <h2 class="projects">4.875</h2><i class="ri-heart-3-fill"></i> 
             </div>
             <div class="desc">
                 Project Views last year
             </div>
         </div>
-        <div class="box" id="box3">3</div>
+        <div class="box" id="box3">
+            <div class="top">New Users</div>
+            <div class="middle">57K</div>
+            <div class="bottom">+10%</div>
+        </div>
         <div class="box" id="box4">4</div>
         <div class="box" id="box5">
             <div class="bar-chart"></div>
