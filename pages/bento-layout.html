@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -20,7 +21,7 @@
             height: 100vh;
             display: grid;
             grid-template-rows: repeat(4, 1fr);
-            grid-template-columns:  repeat(4, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 8px;
             padding: 10px;
         }
@@ -30,7 +31,9 @@
             border-radius: 10px;
         }
 
-        #box1, #box4, #box5 {
+        #box1,
+        #box4,
+        #box5 {
             grid-row: span 2;
         }
 
@@ -46,7 +49,9 @@
             grid-column: span 2;
         }
 
-        #box1, #box5, #box9 {
+        #box1,
+        #box5,
+        #box9 {
             background-color: #f7d2e3;
         }
 
@@ -60,7 +65,8 @@
             align-items: center;
             justify-content: center;
         }
-        .larki img{
+
+        .larki img {
             width: 100%;
             height: 100%;
             mix-blend-mode: darken;
@@ -77,7 +83,7 @@
             align-items: center;
             padding: 20px;
             gap: 20px;
-           text-align: center;
+            text-align: center;
         }
 
         #box1 .center {
@@ -90,7 +96,7 @@
             aspect-ratio: 1/1;
         }
 
-        #box1 .center .arc{
+        #box1 .center .arc {
             width: 80px;
             height: 80px;
             border: 5px solid #d65893;
@@ -98,7 +104,10 @@
             align-content: center;
             justify-items: center;
             text-align: center;
+            /* background: conic-gradient(#3498db 0deg 270deg, transparent 270deg 360deg); */
+
         }
+
 
         #box1 .bottom p {
             font-size: 12px;
@@ -112,6 +121,7 @@
             padding: 20px;
             gap: 20px;
         }
+
         #box2 .heading {
             display: flex;
             align-items: center;
@@ -156,7 +166,7 @@
             width: 16ch;
         }
 
-        #box4 .daily-clients-number{
+        #box4 .daily-clients-number {
             font-size: 36px;
             font-weight: bolder;
         }
@@ -165,45 +175,145 @@
             color: red;
         }
 
-        #box9 {display: flex;
+        #box9 {
+            display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 0 10px;
         }
 
+        #box9 .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
         #box9 .heading {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: bold;
             width: 20ch;
         }
+
         #box9 .desc {
             font-size: 12px;
         }
+
         #box9 img {
-            height: 100px;
+            height: 80px;
+            border-radius: 16px;
+        }
+
+        #box7 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        #box7 .cube-icon {
+            font-size: 24px;
+        }
+
+        #box7 .cubo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+
+        #box8 {
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            gap: 16px;
+            justify-content: center;
+        }
+
+        #box8 .font {
+            font-weight: bolder;
+        }
+
+        #box8 .font-name {
+            font-size: 12px;
+        }
+
+        #box8 .color-container {
+            display: flex;
+            gap: 4px;
+        }
+
+
+        .boxx {
+            width: 30px;
+            height: 20px;
+            background-color: #472a2a;
+        }
+
+        #box6 {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #box6 .smart {
+            width: 12ch;
+        }
+
+        #box6 .image-con {
+            display: flex;
+            gap: 10px;
+        }
+
+        #box6 .imagecon1 {
+            width: 50px;
+            height: 80px;
+            border-radius: 24px;
+            background-color: #bf4848;
+            background-image: url(https://i.pinimg.com/474x/cc/89/58/cc895868763fe7037f48f313a2b933de.jpg);
+            object-fit: fill;
+
+            background-position: center;
+        }
+
+        #box6 .imagecon2 {
+            width: 50px;
+            height: 80px;
+            border-radius: 24px;
+            background-color: #bf4848;
+            background-image: url(https://i.pinimg.com/474x/cc/89/58/cc895868763fe7037f48f313a2b933de.jpg);
+            object-fit: fill;
+
+            background-position: center;
+            margin-top: 20px;
         }
     </style>
 </head>
+
 <body>
     <main>
         <div class="box" id="box1">
-           <div class="top">
-            First Round of funding
-           </div>
-           <div class="center">
-            <div class="arc">
-                <span>75%</span>
+            <div class="top">
+                First Round of funding
             </div>
-            
-           </div>
-           <div class="bottom">
+            <div class="center">
+                <div class="arc">
+                    <span>75%</span>
+                </div>
+
+            </div>
+            <div class="bottom">
                 <h2>2.5K</h2>
                 <p>283 Contributions in the last year</p>
-           </div>
+            </div>
         </div>
         <div class="box" id="box2">
             <div class="heading">
-                <h2 class="projects">4.875</h2><i class="ri-heart-3-fill"></i> 
+                <h2 class="projects">4.875</h2><i class="ri-heart-3-fill"></i>
             </div>
             <div class="desc">
                 Project Views last year
@@ -224,27 +334,58 @@
         <div class="box" id="box5">
             <div class="bar-chart"></div>
             <div class="larki">
-                <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA1L3Jhd3BpeGVsX29mZmljZV8yOF95b3VuZ19ibGFja19idXNpbmVzc193b21hbl9ob2xkaW5nX2xhcHRvcF9sb181ZDE2Y2JhOS1kZjRlLTQ3NzUtYjY0My0yNWE1ZTQwNjk2MDEtam9iMTk1NC5wbmc.png" alt="" srcset=""
-                height="100%"
-                >
+                <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA1L3Jhd3BpeGVsX29mZmljZV8yOF95b3VuZ19ibGFja19idXNpbmVzc193b21hbl9ob2xkaW5nX2xhcHRvcF9sb181ZDE2Y2JhOS1kZjRlLTQ3NzUtYjY0My0yNWE1ZTQwNjk2MDEtam9iMTk1NC5wbmc.png"
+                    alt="" srcset="" height="100%">
             </div>
             <div class="snake-chart"></div>
             <div class="youtube"></div>
             <div class="engagement"></div>
         </div>
-        <div class="box" id="box6">6</div>
-        <div class="box" id="box7">7</div>
-        <div class="box" id="box8">8</div>
+        <div class="box" id="box6">
+            <div class="smart">
+                Smart Digital Agency For Your Business
+
+            </div>
+            <div class="image-con">
+                <div class="imagecon1">
+                    <img src="" alt="" class="image1">
+
+                </div>
+                <div class="imagecon2">
+                    <img src="" alt="" class="imag2">
+
+                </div>
+            </div>
+        </div>
+        <div class="box" id="box7">
+            <div class="cube-icon">
+                <i class="ri-reactjs-fill"></i>
+            </div>
+            <div class="cubo">CUBO</div>
+        </div>
+        <div class="box" id="box8">
+            <div class="font">Font</div>
+
+            <div class="font-name">Sk- Modernist</div>
+            <div class="color-container">
+                <div class="boxx" id="box-one"></div>
+                <div class="boxx" id="box-two"></div>
+                <div class="boxx" id="box-three"></div>
+                <div class="boxx" id="box-four"></div>
+            </div>
+        </div>
         <div class="box" id="box9">
             <div class="left">
                 <div class="heading">We Build Future of Design Industry</div>
-                <br>
+
                 <div class="desc">Crafting Meaningful UI/UX Desing</div>
             </div>
             <div class="right">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs4QjxWdrmkHmc6PIaJYDCCSQhgY8F0fZm8Q&s" alt="" srcset="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs4QjxWdrmkHmc6PIaJYDCCSQhgY8F0fZm8Q&s"
+                    alt="" srcset="">
             </div>
         </div>
     </main>
 </body>
+
 </html>
