@@ -11,13 +11,18 @@
             box-sizing: border-box;
         }
 
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right,#33b341, #78e83b );
+
+        }
         main{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background: linear-gradient(to right,#33b341, #78e83b );
+            /* height: 100vh; */
             /* flex-shrink: none; */
+            flex-wrap: wrap;
         }
 
         .card{
@@ -57,6 +62,15 @@
             border: none;
             border-radius: 24px;
             cursor: pointer;
+        }
+
+        .card:hover{
+            transform: scale(1.1);
+            transition: transform 0.9s;
+        }
+
+        .button:hover{
+            background: #4a9abf;
         }
     </style>
 </head>
