@@ -33,5 +33,55 @@ function isItTruthy(input) {
 }
 
     </pre>
+
+    <script>
+        function stringToNumber(input) {
+            let num = Number(input);
+            if (isNaN(num)) {
+                return "Not a number";
+            }
+            return num;
+        }
+
+        console.log(stringToNumber("123")); // 123
+        console.log(stringToNumber("abc")); // Not a number
+
+        function flipBoolean(input) {
+            return !Boolean(input);
+        }
+
+        console.log(flipBoolean(0)); // true
+        console.log(flipBoolean(1)); // false
+        console.log(flipBoolean("")); // true
+        console.log(flipBoolean("abc")); // false
+
+        function whatAmI(input) {
+            if (typeof input === "number") {
+                return "I'm a number!";
+            } else if (typeof input === "string") {
+                return "I'm a string!";
+            }else {
+                return "I'm not a number or a string!";
+            }
+        }
+
+        console.log(whatAmI(123)); // I'm a number!
+        console.log(whatAmI("abc")); // I'm a string!
+        console.log(whatAmI(true)); // I'm not a number or a string!
+
+        function isItTruthy(input) {
+            if (input) {
+                return "It's truthy!";
+            } else {
+                return "It's falsey!";
+            }
+        }
+
+        console.log(isItTruthy(0)); // It's falsey!
+        console.log(isItTruthy(1)); // It's truthy!
+        console.log(isItTruthy("")); // It's falsey!
+        console.log(isItTruthy("abc")); // It's truthy!
+        console.log(isItTruthy(true)); // It's truthy!
+    </script>
 </body>
 </html>
