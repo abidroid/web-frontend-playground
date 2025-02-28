@@ -48,5 +48,37 @@ function flattenArray(arr) {
 }
 
     </pre>
+
+    <script>
+        function filterNumbers(arr) {
+            return arr.filter((item) => typeof item === "number");
+        }
+
+        console.log(filterNumbers([1, 2, "a", "b"])); // [1, 2]
+
+        function reverseArray(arr) {
+            return arr.reverse();
+        }
+
+        console.log(reverseArray([1, 2, 3, 4])); // [4, 3, 2, 1]
+
+        function findMax(arr) {
+            return Math.max(...arr);
+        }
+
+        console.log(findMax([1, 2, 3, 4])); // 4
+
+        function removeDuplicates(arr) {
+            return [...new Set(arr)];
+        }
+
+        console.log(removeDuplicates([1, 2, 2, 3, 4, 4])); // [1, 2, 3, 4]
+
+        function flattenArray(arr) {
+            return arr.flat();
+        }
+
+        console.log(flattenArray([1, [2, 3], [4, 5]])); // [1, 2, 3, 4, 5]
+    </script>
 </body>
 </html>
