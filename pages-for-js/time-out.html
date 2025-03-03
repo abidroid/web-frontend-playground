@@ -9,6 +9,7 @@
 
 <body>
     <h1>Time Out</h1>
+    <button id="stop">Stop</button>
 
     <script>
 
@@ -21,7 +22,13 @@
             h1.innerText = 'Welcome to IntelliLogics';
         }
 
-        setTimeout(greetings, 2000)
+        const sayGreetings = setTimeout(greetings, 2000)
+
+        document.querySelector('#stop')
+            .addEventListener('click', function () {
+
+                clearTimeout(sayGreetings);
+            })
     </script>
 </body>
 
