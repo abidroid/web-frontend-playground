@@ -9,5 +9,21 @@
     <h1>Time Interval</h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
+
+    <script>
+        function getColor() {
+            const hex = "0123456789ABCDEF"
+
+            let hexColor = "#"
+
+            for( let i = 0; i < 6; i++ ){
+                hexColor += hex[Math.floor(Math.random() * 16) ]
+            }
+        
+            return hexColor;
+        }
+
+        document.body.style.backgroundColor =  getColor()
+    </script>
 </body>
 </html>
