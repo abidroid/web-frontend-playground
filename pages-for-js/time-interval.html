@@ -23,7 +23,13 @@
             return hexColor;
         }
 
-        document.body.style.backgroundColor =  getColor()
+        const changeBgColor = function(){
+
+            document.body.style.backgroundColor =  getColor()
+        }
+
+        setInterval(changeBgColor, 1000)
+
     </script>
 </body>
 </html>
