@@ -8,17 +8,22 @@
 <body>
     <h1>API Request with XMLHttpRequest</h1>
     <script>
+        const url = 'https://api.github.com/users/abidroid'
         const xhr = new XMLHttpRequest()
 
-        xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts', true)
+        console.log(xhr.readyState);
+        xhr.open('GET', url)
+        xhr.onreadystatechange = function(){
 
-        xhr.onload = function(){
-            if(this.status === 200){
-                console.log(JSON.parse(this.responseText))
+            console.log(xhr.readyState);
+
+            if(xhr.readyState === 4 && xhr.status === 200){
+                console.log(xhr.responseText)
             }
         }
+        xhr.send();
 
-        xhr.send()
+      
     </script>
 </body>
 </html>
