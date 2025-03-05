@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>API Request with XMLHttpRequest</h1>
+    <script>
+        const xhr = new XMLHttpRequest()
+
+        xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts', true)
+
+        xhr.onload = function(){
+            if(this.status === 200){
+                console.log(JSON.parse(this.responseText))
+            }
+        }
+
+        xhr.send()
+    </script>
+</body>
+</html>
