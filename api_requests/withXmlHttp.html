@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>API Request with XMLHttpRequest</h1>
-    <script>
-        const url = 'https://api.github.com/users/abidroid'
-        const xhr = new XMLHttpRequest()
+    <button onclick="fetchData()">Fetch Data</button>
+    <div id="output"></div>
 
-        console.log(xhr.readyState);
-        xhr.open('GET', url)
-        xhr.onreadystatechange = function(){
+    <script>
+        function fetchData() {
+            const url = 'https://api.github.com/users/abidroid'
+            const xhr = new XMLHttpRequest()
 
             console.log(xhr.readyState);
+            xhr.open('GET', url)
+            xhr.onreadystatechange = function () {
 
-            if(xhr.readyState === 4 && xhr.status === 200){
-                console.log(xhr.responseText)
+                console.log(xhr.readyState);
+                console.log(xhr.responseText);
+
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    const output = document.getElementById('output');
+                    const data = JSON.parse(xhr.responseText);
+                    output.innerHTML = "<h2>" + data.name + "</h2>";
+                    output.innerHTML += "<img src='" + data.avatar_url + "' alt='avatar' width='100'>";
+                }
             }
+            xhr.send();
         }
-        xhr.send();
 
-      
+
     </script>
 </body>
+
 </html>
