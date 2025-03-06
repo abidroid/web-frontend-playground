@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries Flag</title>
+
+    <style>
+        .row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Countries and Flags</h1>
+    <button onclick="fetchCountries()">Fetch Countries</button>
+    <div id="output"></div>
+
+    <script>
+        function fetchCountries() {
+            const url = 'https://countriesnow.space/api/v0.1/countries/flag/images';
+            const xhr = new XMLHttpRequest();
+
+            xhr.open('GET', url);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText);
+                    
+                    const output = document.getElementById('output');
+                    const data = JSON.parse(xhr.responseText);
+                   
+                    for( let i = 0; i < data.data.length; i++) {
+                        output.innerHTML += "<div class='row'><img src='" + data.data[i].flag + "' alt='" + data.data[i].name + "' height='70'><br>" + data.data[i].name + "</div>";
+                    }
+                }
+            }
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
