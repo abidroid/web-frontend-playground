@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meow Facts</title>
+
+    <style>
+        #output {
+            background-color: aliceblue;
+            margin-top: 20px;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Meow Facts</h1>
@@ -15,7 +23,12 @@
         let displayDiv = document.getElementById('output');
 
         async function getFacts() {
+            const response = await fetch(URL);
+            const data = await response.json();
 
+            displayDiv.innerHTML = `<strong>
+                ${data.data[0]}
+                </strong>`;
         }
     </script>
 </body>
