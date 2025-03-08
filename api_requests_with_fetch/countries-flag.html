@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API Request with Fetch</title>
+    <style>
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row img {
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
     <h1>Countries Flags</h1>
     <button onclick="fetchCountries()">Fetch Countries</button>
     <div id="output"></div>
+
+
 
     <script>
         async function fetchCountries() {
@@ -18,10 +30,13 @@
             const jsonData = await response.json();
 
       
+            let displayDiv = document.getElementById('output');
 
             for( let country of jsonData.data){
 
-                console.log(country.name);
+                displayDiv.innerHTML += `<div class='row'>
+                    <img src='${country.flag}'></img>
+                    <span>${country.name}</span></div>`;
                 
             }
             
