@@ -25,5 +25,13 @@ function Person(name, age) {
     };
 }
 
-const ali = new Person('Ali', -33);
-ali.greet();
+try {
+    const ali = new Person('Ali', 33);
+    ali.greet();
+
+    const bilal = new Person('Bilal', -32);
+    bilal.greet();
+}
+catch (error){
+    console.error(`Error: ${error.message}`);
+}
