@@ -37,3 +37,10 @@ const dog = new Dog();
 
 console.log(dog.speak());
 console.log(dog.bark());
+
+console.log(dog instanceof Animal);
+console.log(dog instanceof Dog);
+console.log(Dog.prototype instanceof Animal);
+
+
+
