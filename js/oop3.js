@@ -54,3 +54,9 @@ class Car extends Vehicle {
 
 const vehicle = new Vehicle('Toyota', 'Corolla');
 console.log(vehicle.getDetails());
+
+const alto = new Car('Suzuki', 'Alto');
+console.log(alto.getDetails());
+console.log(alto.startEngine());
+console.log(alto.move());
+console.log(Vehicle.isVehicle(alto));
