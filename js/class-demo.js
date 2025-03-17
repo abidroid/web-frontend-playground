@@ -33,3 +33,6 @@ class Employee extends Person {
 const emp = new Employee('Ali', 'M', "1st Nov", 'E001', 'Manager', 'IT');
 emp.display();
 
+console.log(emp instanceof Employee);
+console.log(emp instanceof Person);
+console.log(emp instanceof Object);
