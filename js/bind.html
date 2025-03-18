@@ -15,7 +15,7 @@
 
                 document
                 .querySelector("button")
-                .addEventListener("click", this.handleClick);
+                .addEventListener("click", this.handleClick.bind(this));
 
             }
 
@@ -26,6 +26,10 @@
                 
             }
         }
+
+        const library = new React();
+
+
     </script>
 </body>
 </html>
