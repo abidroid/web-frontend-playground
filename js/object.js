@@ -17,3 +17,12 @@ console.log(Object.getOwnPropertyDescriptor(abid, "name"));
 }
 */
 
+Object.defineProperty(abid, "name", {
+    writable: false,
+});
+
+// now name cannot be changed
+abid.name = 'Abid Ali';
+
+console.log(abid);
+
